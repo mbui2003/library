@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Library</h1>
+    </header>
+    <main class="content">
+      <div class="container">
+        <form id="myForm">
+          <h4>Add a new book</h4>
+          <div>
+            <label for="title">Title</label>
+            <input id="title" type="text" required />
+          </div>
+          <div>
+            <label for="author">Author</label>
+            <input id="author" type="text" required />
+          </div>
+          <div>
+            <label for="pages">Pages</label>
+            <input id="pages" type="number" required />
+          </div>
+          <div>
+            <label for="status">Status</label>
+            <select name="status" id="status" class="u-full-width">
+              <option value="Read">Read</option>
+              <option value="Not read">Not read</option>
+            </select>
+          </div>
+          <div>
+            <button class="submit" type="submit">Submit</button>
+          </div>
+        </form>
+        <table class="table">
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          <tbody id="book-table-body"></tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer"><h4>Made by Matthew Bui</h4></footer>
+  </body>
+</html>
